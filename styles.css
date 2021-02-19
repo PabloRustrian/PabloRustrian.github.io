@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,body,.main {
+  font-size: 12px;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  line-height:1.4;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section{
+  background: #fffffff5;
+  box-shadow: 0px 15px 15px 0px rgba(226,226,226,0.50);
+  border-radius: 10px;
+}
+
+.container--title { 
+  padding: 3rem 0 0 0;
+}
+
+.container--msg {
+  padding: 1.5rem 2.5rem 2.5rem 3rem;
+}
+
+.logo--img{
+  max-width: 60%;
+  height: auto;
+
+}
+
+.msg__head,
+.msg__body,
+.msg__footer,
+.msg__tc
+ {
+  text-align: center;
+  color: #455467;
+  font-family: "Century Gothic", Helvetica, Arial, sans-serif;
+}
+
+.msg__head {
+  font-size: 3.5em;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.msg__body, .msg__tc {
+  font-size: 1.5em;
+}
+
+.msg__tc{
+  font-weight: bolder;
+  
+}
+
+.msg__footer{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.main_footer {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+.main,
+.main_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main {
+  flex-direction: column;
+  background-color: #061c2d;
+}
+
+.main_footer, .section {
+  animation: carga .5s both;
+  flex-wrap: wrap;
+  max-width: 600px;
+  opacity: 0;
+  animation-delay: .5s;
+}
+
+.main_footer a {
+  font-size: 20px;
+  color: #fff;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, .5);
+  margin: .5%;
+  border-radius: 3px;
+  width: 7%;
+  transition: background .3s;
+}
+.main_footer a:active,
+.main_footer a:focus,
+.main_footer a:hover {
+  text-decoration: none
+}
+.main_footer a:hover {
+  background-color: rgba(196, 191, 191, 0.37)
+}
+
+.gear, .gear2, .gear3
+{
+    content: "";
+    font-family: "FontAwesome";
+    position: absolute;   
+    transform-origin: center;
+    z-index: 0;
+    color: #ffffff2c;
+}
+.gear 
+{
+  font-size: 40em;
+  top: 17%;
+  right: 65%;
+  animation: gear 50s infinite linear;
+}
+
+.gear2 
+{
+  font-size: 25em;
+  top: -20%;
+  right: 15%;
+  animation: gear 30s infinite linear;
+}
+
+.gear3
+{
+  font-size: 15em;
+  top: 65%;
+  right: 5%;
+  animation: gear 10s infinite linear;
+}
+
+@keyframes carga {
+  from {transform: translateY(2rem);opacity: 0}
+  to {transform: translateY(0);opacity: 1}
+}
+
+@keyframes gear {
+  0% {
+    transform: rotate(0deg);}
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gear2 {
+  0% {
+    transform: rotate(0deg);}
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gear3 {
+  0% {
+    transform: rotate(0deg);}
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}

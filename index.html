@@ -7,18 +7,19 @@
     <link rel="shortcut icon" href="Resources/bg.jpg" sizes="36x36">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js"></script>
     <title>Sitio en Mantenimiento</title>
 </head>
-<body>
+<body onLoad ="getData()">
     <div class='main'>        
         <div class="section">
             <div class="container--title">
                 <img class="logo--img" src="Resources/bg.jpg" alt="Banco de Guatemala">
             </div>
             <div class="container--msg">
-                <h1 class="msg__head">¡Sitio en mantenimiento!</h1>
-                <p class="msg__body">Tipo de cambio de referencia: <u>Pendiente</u></p>
-                <p class="msg__footer"><br><br><br>&copy; <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> Banco de Guatemala</p>                
+                <h1 class="msg__head">¡Sitio en mantenimiento!</h1><br>
+                <p class="msg__body">Tipo de cambio de referencia <p class="msg__tc" id="txtID"></b></p>
+                <p class="msg__footer"><br><br><br><br>&copy; <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> Banco de Guatemala</p>                
             </div>            
         </div>
         <br><br><br><br><br><br>            
