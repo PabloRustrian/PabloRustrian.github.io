@@ -39,7 +39,8 @@ html,body,.main {
 
 .msg__head,
 .msg__body,
-.msg__footer
+.msg__footer,
+.msg__tc
  {
   text-align: center;
   color: #455467;
@@ -52,8 +53,13 @@ html,body,.main {
   margin-top: 0;
 }
 
-.msg__body {
+.msg__body, .msg__tc {
   font-size: 1.5em;
+}
+
+.msg__tc{
+  font-weight: bolder;
+  
 }
 
 .msg__footer{
