@@ -1,6 +1,4 @@
 var XMLHttpRequestObject = false;
-var txtID = "txtID"
-var dataSource = "tc.txt"
 
 if (window.XMLHttpRequest) {
   XMLHttpRequestObject = new XMLHttpRequest();
@@ -8,7 +6,7 @@ if (window.XMLHttpRequest) {
   XMLHttpRequestObject = new ActiveXObject("Microsoft.XMLHTTP");
 }
 
-function getData() {
+function getData(dataSource,txtID) {
   if (XMLHttpRequestObject) {
     var obj = document.getElementById(txtID);
     XMLHttpRequestObject.open("GET", dataSource);
