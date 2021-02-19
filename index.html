@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Sitio en Mantenimiento</title>
 </head>
-<body>
-    <div class='main'>
+<body onload="GetYear">
+    <div class='main'>        
         <div class="section">
+            <div class="container--title">
+                <img class="logo--img" src="Resources/bg.jpg" alt="Banco de Guatemala">
+            </div>
             <div class="container--msg">
                 <h1 class="msg__head">¡Sitio en mantenimiento!</h1>
-                <p class="msg__body"><br>Volveremos pronto.</p>
-            </div>
-            <br><br><br><br><br><br>
-            <footer class='main_footer'>
-                <a href='https://www.facebook.com/banguat' target='_blank'>
-                    <i class='fab fa-facebook-f'></i>
-                </a>
-                <a href='https://twitter.com/banguat' target='_blank'>
-                    <i class='fab fa-twitter'></i>
-                </a>
-                </a>
-                <a href='https://www.instagram.com/banguat/' target='_blank'>
-                    <i class='fab fa-instagram'></i>
-                </a>
-                <a href='https://www.youtube.com/user/BANGUAT' target='_blank'>
-                    <i class='fab fa-youtube'></i>
-                </a>
-            </footer>          
+                <p class="msg__body">Tipo de cambio de referencia: <u>Pendiente</u></p>
+                <p class="msg__footer"><br><br><br>&copy; <span id="copyright"><script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> Banco de Guatemala</p>                
+            </div>            
         </div>
+        <br><br><br><br><br><br>            
+        <footer class='main_footer'>
+            <a href='https://www.facebook.com/banguat' target='_blank'>
+                <i class='fab fa-facebook-f'></i>
+            </a>
+            <a href='https://twitter.com/banguat' target='_blank'>
+                <i class='fab fa-twitter'></i>
+            </a>
+            </a>
+            <a href='https://www.instagram.com/banguat/' target='_blank'>
+                <i class='fab fa-instagram'></i>
+            </a>
+            <a href='https://www.youtube.com/user/BANGUAT' target='_blank'>
+                <i class='fab fa-youtube'></i>
+            </a>
+        </footer>          
     </div>
  
     <!--Animaciones -->
